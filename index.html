@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="img" href="./assets/images/WRETCHED_LOGO.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayDirect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="p-3 mb-2 bg-dark text-white text-center">
+    <!-- Sidebar -->
+    <ul id="sidebar" class="list-group list-group-flush flex-shrink-0"></ul>
+
+    <!-- Header -->
+    <header>
+        <h1>PlayDirect</h1>
+        <button id="chooseFolder" class="btn btn-secondary mb-3">Choose Folder</button>
+    </header>
+
+    <!-- Main Page Content -->
+    <div class="main-content">
+        <div id="mediaContainer">
+            <div class="mb-3">
+                <h2 id="audioHeader" class="hidden">
+                    <button class="btn btn-secondary w-100 text-left d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#audioCollapse" aria-expanded="false" aria-controls="audioCollapse">
+                        <img src="./assets/images/3319145-200.png" alt="Audio Logo" class="logo me-2"> Audio Files
+                    </button>
+                </h2>
+                <div id="audioCollapse" class="collapse">
+                    <div id="audioRow" class="media-row"></div>
+                </div>
+            </div>
+            <div>
+                <h2 id="videoHeader" class="hidden">
+                    <button class="btn btn-secondary w-100 text-left d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#videoCollapse" aria-expanded="false" aria-controls="videoCollapse">
+                        <img src="./assets/images/3319145-200.png" alt="Video Logo" class="logo me-2"> Video Files
+                    </button>
+                </h2>
+                <div id="videoCollapse" class="collapse">
+                    <div id="videoRow" class="media-row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
