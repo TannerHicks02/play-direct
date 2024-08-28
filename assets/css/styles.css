@@ -35,6 +35,15 @@ body {
     color: #ffffff;
 }
 
+/* CSS for the active folder */
+.list-group-item.active-folder {
+    background-color: #4a4a4a !important; /* Use !important to override other styles */
+    color: #ffffff !important; /* Ensures the text color changes too */
+    font-weight: bold; /* Bold text for better visibility */
+}
+
+
+
 /* Header Styling */
 header {
     position: fixed; /* Fixes the header to the top of the viewport */
@@ -91,6 +100,10 @@ h2 button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.media-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .media-item img {
